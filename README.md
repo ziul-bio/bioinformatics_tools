@@ -26,6 +26,7 @@ Nowaday days, works as an independent biological data analyst/bioinformatician.
 * [Biopython](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Biopython_get_started.ipynb)
 * [Blast](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Blast_protein.ipynb)
 * [Hisat2](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Hisat2.md)
+* [FeatureCounts](https://github.com/ziul-bio/bioinformatics_tools/blob/main/FeatureCounts.md)
 * [Samtools](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Samtools.md)
 * [Fastqc_Multiqc](https://github.com/ziul-bio/bioinformatics_tools/blob/main/FastQC_MultiQC.md)
 * [Fastp](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Fastp.md)
