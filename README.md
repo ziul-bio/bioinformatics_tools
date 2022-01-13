@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="banner.png" >
+  <img src="images/banner.png" >
 </p>
 
 # Luiz Carlos Vieira
@@ -11,9 +11,9 @@
 Graduated in Biological Sciences and Master in Sciences from the Department of Cellular and Molecular Biology and Pathogenic Bioagents.
 I Worked as a Laboratory Technician (Trainne) and Researcher (Master's Student) at the Virology Research Center (USP).
 Most recently, worked as a Laboratory Analyst in the biological quality control, performing quality control tests on viral vaccines.
-Nowaday days, works as an independent biological data analyst/bioinformatician, seeking to a relocation in the work market.
+Nowaday days, works as an independent biological data analyst/bioinformatician.
 
-**Background in:** Cell and molecular Biology, Python, R, linux.
+**Background in:** Cell and molecular Biology, Virology, Python, R, linux, data analysis.
 
 **Links:**
 * [LinkedIn](https://www.linkedin.com/in/luiz-carlos-vieira-4582797b/)
@@ -21,14 +21,15 @@ Nowaday days, works as an independent biological data analyst/bioinformatician, 
 
 ## About this Project:
 
-* Here, I share with you, my way to answer to biological questions using bioinformatics.
-* In these notebooks, I describe bioinformatics tools, hoping someone could learning from it.
-* Feel here to use all and share some contribuition to improve them too.
+* Here, I describe some bioinformatics tools, like:
+
+* [Biopython](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Biopython_get_started.ipynb)
+* [Blast](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Blast_protein.ipynb)
+* [Hisat2](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Hisat2.md)
+* [Samtools](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Samtools.md)
+* [Fastqc_Multiqc](https://github.com/ziul-bio/bioinformatics_tools/blob/main/FastQC_MultiQC.md)
+* [Fastp](https://github.com/ziul-bio/bioinformatics_tools/blob/main/Fastp.md)
 
 
-
+* Feel free to use all and share some contribuition to improve them too.
 ---
-
-
-
-
