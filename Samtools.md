@@ -67,6 +67,7 @@ samtools view -H sample.bam | less
 ```
 
 #### Uso da opção region
+
 Para o uso desta opção, o arquivo bam precisa ter o index criado pela função index do samtools
 ```bash
 # Esta função gera um arquivo .bai
@@ -78,6 +79,10 @@ samtools view sample.bam "chr22:24000000-25000000"
 # Visualizar uma região do arquivo bam, tendo como referencia um arquivo .bed com as coordenadas.
 # este arquivo bed, pode ser um arquivo com pelo menos 3 colunas. ex: chr22	24000000 25000000
 samtools view -L sample.bed sample.bam
+
+
+# Este commando gera um index .fai de um arquivo fasta
+samtools faidx ref_genome/genome.fa
 ```
 
 ### Samtools sort

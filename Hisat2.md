@@ -49,7 +49,7 @@ Existem pelo menos dois métodos principais para a síntese de cDNA em bibliotec
 
 * o método dUTP, que preserva a fita complementar
 
-* o método Illumina, que liga diretamente ao RNA os ligantes, preserva a orientação original do RNA
+* o método Illumina, que liga diretamente ao RNA a os ligantes, preserva a orientação original do RNA
 
 É muito provável que o bioinformata não receba as informações da preparação da biblioteca de cDNA o que pode dificultar a escolha
 dos parâmetros corretos. Por isso, realizar este teste agora, evita problemas futuros no decorrer da pipeline, como:

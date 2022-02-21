@@ -41,7 +41,7 @@ cp ~/bioinfo/rna-seq/3-Alignment_HISAT2/*.bam ~/bioinfo/rna-seq/4-featureCounts
 featureCounts [options] -a annotation_file.gtf -o output_file.txt input_file1.bam input_file2.bam
 
 #### Options:
-	-t 'exons' (defualt) _______ especifica quais recursos considerar do gtf. (exon, gene, transcritos)
+	-t 'exons' (defualt) _______ especifica quais "features" considerar do gtf. (exon, gene, transcript, intron)
 	-g 'gene_id' (padrão) ______ especifica o tipo de atributo a ser considerado do arquivo gtf. (gene_id, gene_name, p_id, transcript_id, tss_id)
 	-T _________________________ especificar o número de threads
 	-p ou --countReadPairs _____ Contagem de fragmentos em vez de reads:
@@ -49,6 +49,16 @@ featureCounts [options] -a annotation_file.gtf -o output_file.txt input_file1.ba
 	-o _________________________ /path_and_fileName/featurecounts.txt
 	-s _________________________ Realiza a contagem de leitura específica da fita, 0 (unstranded, padrão), 1 (stranded), 2 (stranded reversamente).
 
+meta-features = gene
+
+-t = features attribute in the 3th column of the provided GTF file:
+exon, transcript, intron
+
+-g = gene identifier attribute in the 9th column of the provided GTF file:
+gene_id, gene_name, ref_gene_id, exon_number
+
+exemplo:
+gene_id "MSTRG.8414"; gene_name "LOC726407"
 
 #### Observação importante:
 
@@ -70,13 +80,16 @@ featureCounts -T 4 -p -a ~/bioinfo/rna-seq/1-Raw_data/ref_genome/genome_anotatio
 featureCounts -T 4 -p -s 2 -a ~/bioinfo/rna-seq/1-Raw_data/ref_genome/genome_anotation.gtf -o ~/bioinfo/rna-seq/4-featureCounts/counts.txt SRR10493819.bam
 
 # Contalibizando todos os arquivos .bam no diretório de trabalho:
-featureCounts -T 5 -p -s 2 -a ~/bioinfo/rna_seq/1-raw_data/reference_genome/Mus_musculus.GRCm39.104.gtf -o ~/bioinfo/rna_seq/4-featureCounts/featurecounts.txt *.bam
+featureCounts -T 4 -p -s 2 -a ~/bioinfo/rna_seq/1-raw_data/reference_genome/Mus_musculus.GRCm39.104.gtf -o ~/bioinfo/rna_seq/4-featureCounts/featurecounts.txt *.bam
+
 ```
 
 Output featureCouns:
 ![output featureCounts](images/featurecount.png)
 
-
+```bash
+cut -f 1,7-8 featurecounts.txt > counts.txt
+```
 
 ## Referências:
 
