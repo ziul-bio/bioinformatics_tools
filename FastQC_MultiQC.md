@@ -74,8 +74,10 @@ multiqc .
 # Especificando um diretório.
 multiqc ~/bioinfo/rna_seq/2-QC/fastqc
 
-# Especificando multiplos diretórios
-multiqc ~/bioinfo/rna_seq/2-QC/ # esta opção o multiqc procurará por arquivos em todas as pastas.
+# Especificando multiplos diretórios, # esta opção o multiqc procurará por arquivos em todas as pastas.
+multiqc ~/bioinfo/rna_seq/2-QC/ 
+
+# Especicicando output dir 
 multiqc ~/bioinfo/rna_seq/2-QC/fastqc/ -o ~/bioinfo/rna_seq/2-QC/  
 
 # Especificando diretório e arquivos a serem analisados

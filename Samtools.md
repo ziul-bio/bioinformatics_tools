@@ -80,9 +80,17 @@ samtools view sample.bam "chr22:24000000-25000000"
 # este arquivo bed, pode ser um arquivo com pelo menos 3 colunas. ex: chr22	24000000 25000000
 samtools view -L sample.bed sample.bam
 
+```
 
+### Samtools faidx
+```bash
 # Este commando gera um index .fai de um arquivo fasta
 samtools faidx ref_genome/genome.fa
+
+# Extrai sequenncias de um arquivos fasta, e retorna apenas aquelas da qual a id esta presente num arquivo contendo uma lista de ids das sequencias desejadas.
+# O único problena com esta função é que, a id presente no novo arquivo será a id da lista e não a id do arquivo fasta original.
+# caso se deseje manter todas as informações da sequencia do arquivo original, melhor usar a função seqkit grep
+xargs samtools faidx data/sequences.fasta < retrons_ids2.txt > retrons_seqs.txt
 ```
 
 ### Samtools sort
